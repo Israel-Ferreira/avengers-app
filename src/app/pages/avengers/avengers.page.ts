@@ -14,9 +14,8 @@ export class AvengersPage implements OnInit {
   constructor(private _apiService: ApiService) { }
 
   ngOnInit() {
+    this.obterVingadores();
   }
-
-
 
   obterVingadores() {
     this._apiService.getAvengers()
@@ -25,14 +24,14 @@ export class AvengersPage implements OnInit {
       });
   }
 
-  deletarVingadores() {
-    this._apiService.getAvengers()
-      .subscribe(response => {
-        setTimeout(time => {
-          this.avengers = [];
-        }, 1000)
-      });
-  }
+  // deletarVingadores() {
+  //   this._apiService.getAvengers()
+  //     .subscribe(response => {
+  //       setTimeout(time => {
+  //         this.avengers = [];
+  //       }, 1000)
+  //     });
+  // }
 
 
 }
