@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img src="../../../assets/logo.jpg" alt="Avengers">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let vingador of vingadores">
+    <ion-card-header>
+      <img src="../../../assets/iron_man.jpg" alt="Vingador">
+      <ion-card-subtitle>{{ vingador.nomePersonagem }}</ion-card-subtitle>
+      <ion-card-title>{{ vingador.nomeHeroi }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content> {{ vingador.descricao }} </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
