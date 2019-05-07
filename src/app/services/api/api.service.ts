@@ -9,7 +9,7 @@ const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
-const apiUrl = 'https://localhost:5001/api/Avenger';
+const apiUrl = 'https://localhost:44388/api/Avenger';
 
 
 @Injectable({
